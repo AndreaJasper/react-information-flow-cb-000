@@ -11,13 +11,13 @@ export default class Tier2 extends Component {
       childColor: getReducedColor(this.props.color),
     }
   }
-  
-  
+
+
   handleChildClick = (event) => {
     event.stopPropagation()
     this.setState({childColor: getRandomColor()})
   }
-  
+
 
   render() {
     // hard coded color values have been added below, though they won't be
